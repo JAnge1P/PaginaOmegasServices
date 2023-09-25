@@ -1,0 +1,63 @@
+/* Estilos para el navbar */
+/**/
+nav {
+    background-color: #b84214;
+    overflow: hidden;
+    font-family: Arial, sans-serif; /* Fuente del texto del navbar */
+    margin: 0px; /* Elimina el margen exterior */
+    padding: 0px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Efecto de transición de color de fondo */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para los botones */
+.button {
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.button:hover {
+    background-color: #424242;
+}
+
+/* Estilos para el contenido de la página */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.text1{
+    color: white;
+    font-size: 80px;
+}
+.text2{
+    color: white;
+    font-size: 40px;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+    margin: 0; /* Elimina el margen exterior del body */
+    padding: 0; /* Elimina el relleno interior del body */
+}

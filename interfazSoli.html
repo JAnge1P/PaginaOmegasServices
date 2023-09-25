@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Materiales</title>
+    <link rel="stylesheet" href="Css/EstilosSolicitud.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Solicitud de Recursos</h2>
+        <form>
+            <div class="form-group">
+                <label for="fechaS">Fecha</label>
+                <input type="date" id="fechaS" name="fechaS" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad" name="prioridad" required>
+                    <option value="" disabled selected>Selecciona una prioridad</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tipoSolicitud">Tipo de Solicitud:</label>
+                <select id="tipoSolicitud" name="tipoSolicitud" required>
+                    <option value="" disabled selected>Selecciona</option>
+                    <option value="material">Material</option>
+                    <option value="viaticos">Viáticos</option>
+                    <option value="equipo">Equipo</option>
+                    <option value="servicios">Servicios</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="proyecto">Proyecto:</label>
+                <input type="text" id="proyecto" name="proyecto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nombreSolicitante">Nombre del Solicitante:</label>
+                <input type="text" id="nombreSolicitante" name="nombreSolicitante" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="costoUnitario">Costo Unitario:</label>
+                <input type="number" id="costoUnitario" name="costoUnitario" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="total">Total:</label>
+                <input type="number" id="total" name="total" step="0.01" required readonly>
+            </div>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+</body>
+</html>
